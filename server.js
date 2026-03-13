@@ -50,7 +50,6 @@ app.post('/api/guardar', (req, res) => {
 });
 
 // Usar 3000 o 8080 está bien, pero asegúrate de que no esté ocupado
-const PORT = 8080;
-app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+app.listen(8080, '0.0.0.0', () => { // inicia servidor puerto 8080
+    console.log('Servidor corriendo en http://0.0.0.0:8080'); // mensaje inicio
 });
